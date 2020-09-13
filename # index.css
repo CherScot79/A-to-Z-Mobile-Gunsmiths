@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oregano&family=Press+Start+2P&display=swap');
+
+/*General Styles*/
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+  max-width:100%;   
+}
+html{
+    color: #3c373b;
+}
+body{
+    line-height:2;
+    font-family: 'Lobster Two', cursive;
+}
+/*header styling*/
+header {
+    background-color: #D3D3D9; 
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+/*nav button styling*/
+nav ul { 
+  list-style: none; 
+    }
+
+ nav ul li {
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1.5vh;
+    }
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*home button*/
+.button-one {
+  background-color: #3BB273;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #339963;
+  }
+
+/*products and services button*/
+.button-two {
+  background-color: #4D9DE0;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #2F8DDA;
+  }
+
+/*customization button*/
+.button-three {
+  background-color: #E15554;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #DA2F2F;
+  }
+
+/*about button*/
+.button-four {
+  background-color: #E1BC29;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #C4A31C;
+  }
+
+h1{
+  margin: 20px 0;
+  font-size: 6rems;
+  text-align: center;
+
+}
+h2, h3 {
+  margin-bottom:0;
+  padding:0 10px;
+  font-size: 30px;
+
+}
+
+p{
+font-family: 'Oregano', cursive;
+font-size: 25px;
+padding: 10px;
+line-height: 1.4;
+}
+
+img{
+  border-radius: 10px;
+}
+
+.content-row{
+  display:flex;
+}
+
+.content-row div{
+  margin: 10px;
+}
+
+container{
+  margin: 0 auto;
+  width: 60px;
+}
+
+address{
+  font-size: 30px;
+}
+
+.about-section {
+  margin-top: 20px;
+}
+.contact-section {
+  border-top: 1px dashed black;
+  padding: 20px 0;
+}
+
+.contact-section h2 {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.contact-section address{
+  line-height: 2;
+}
+footer {
+    background-color: #D3D3D9; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+    /*icon sizing*/
+ footer img {
+   width:52px; 
+   height:52px; 
+  }
+
+/*button click hover effect*/
+nav ul li:hover {
+  transform: scale(.9, .9);
+}
+
+/*animation for icon*/
+.logo:hover {
+    animation: rumble 0.3s linear;
+}
+
+@keyframes rumble {
+    25% {transform: rotate(10deg);}
+    75% {transform: rotate(-20deg);}
+}
